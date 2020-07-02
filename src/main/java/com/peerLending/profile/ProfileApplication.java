@@ -22,7 +22,8 @@ public class ProfileApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		userRepository.save(
-				new User("John", "John", "Bongley",
-						31, "Firefighter", LocalDate.now()));
+				new User("John", "John", "B", 27, "Software Developer"));
+		userRepository.save(new User("Peter", "Peter", "C", 21, "Pilot"));
+		userRepository.save(new User("Henry", "Henry", "E", 21, "Unemployed"));
 	}
 }

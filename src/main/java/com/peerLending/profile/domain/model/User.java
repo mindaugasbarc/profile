@@ -19,13 +19,13 @@ public class User {
     public User() {
     }
 
-    public User(String username, String firstName, String lastName, int age, String occupation, LocalDate registeredSince) {
+    public User(String username, String firstName, String lastName, int age, String occupation) {
         this.username = username;
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
         this.occupation = occupation;
-        this.registeredSince = registeredSince;
+        this.registeredSince = LocalDate.now();
     }
 
     public String getUsername() {
